@@ -1,14 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header no-border>
+  <lan-header title="TODO"></lan-header>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <!-- 1st section -->
+    <div class="first-section">
+      Hey Mazlan, <br>
+      this is your to-do list.
+    </div>
+
+    <!-- 2nd section -->
+    <div class="second-section">
+      <!-- <ion-grid no-padding>
+        <ion-row no-padding>
+          <ion-col>
+            <ion-chip color="primary" class="chips">
+              <ion-label>TODAY</ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-chip color="secondary" class="chips">
+              <ion-label>
+                WEEK
+              </ion-label>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <ion-chip color="danger" class="chips ">
+              <ion-label>MONTH</ion-label>
+            </ion-chip>
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
+      <!-- Segment with secondary color -->
+      <ion-segment color="primary">
+        <ion-segment-button [checked]="true" value="standard">
+          <ion-label>DAY</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="hybrid">
+          <ion-label>WEEK</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="sat">
+          <ion-label>MONTH</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+    <!-- 3rd section -->
+    <div class="third-section">
+      <ion-grid no-padding>
+        <ion-row no-padding>
+          <ion-col *ngFor="let obj of array" size="6">
+            <lan-card [img]="obj.image" [title]="obj.title" [subTitle]="obj.subtitle" [borderColor]="obj.color">
+            </lan-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="secondary">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 </ion-content>

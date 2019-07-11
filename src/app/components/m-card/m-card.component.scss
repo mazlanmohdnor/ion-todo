@@ -1,0 +1,39 @@
+.m-card {
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+  margin: 5px;
+}
+
+.m-card-content {
+  margin-top: 5px;
+}
+
+.m-img {
+  // display: block;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left:  10px;
+  max-width: 30%;
+  height: auto;
+  // text-align: center;
+}
+
+.m-title {
+  font-weight: bold;
+  font-size: 18px;
+  // text-align: center;
+  margin-top: 10px;
+  margin-left:  10px;
+  color: #444;
+}
+
+.m-subtitle {
+  // text-align: center;
+  margin-top: 10px;
+  margin-left:  10px;
+
+}
+
+.active-item {
+  border-top: 8px solid red;
+}

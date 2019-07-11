@@ -1,1 +1,27 @@
+.first-section {
+    font-size: 25px;
+    font-weight: bold;
+}
 
+.second-section {
+    margin-top: 30px;
+
+    ion-segment-button {
+        // font-size: 19px !important;
+        color: #000
+    }
+
+    .chips {
+    width: 90%;
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+    }
+
+    ion-label{
+        margin: 0 auto;
+    }
+}
+
+.third-section {
+    margin-top: 40px;
+    padding: 0
+}

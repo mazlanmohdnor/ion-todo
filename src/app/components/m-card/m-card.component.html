@@ -1,0 +1,12 @@
+<ion-card (click)="onClick()" [button]="true" class="m-card" [style.background]="bgcolor ? bgcolor : undefined"
+    [style.border-top]="'10px solid ' + borderColor">
+    <ion-card-content class="m-card-content">
+        <div [style.width]="width ? width : undefined" [style.height]="height ? height : undefined" class="m-img">
+            <img [src]="img" alt="">
+        </div>
+        <div class="m-title" [style.color]="textColor ? textColor : undefined">{{ title }}</div>
+        <div class="m-subtitle">
+            {{ subTitle }}
+        </div>
+    </ion-card-content>
+</ion-card>
